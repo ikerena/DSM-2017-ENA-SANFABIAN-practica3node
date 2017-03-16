@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="css/bootstrap.min.css" media="all" rel="stylesheet"/> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+	
+	</head>
+	<body>
+	
+		<div class='container'>
+		
+			<div class='col-md-12'>
+			<div class='col-md-2'>
+			<a href='index.html'>Home</a>
+			</div>
+			<div class='col-md-2'>
+			<a href='about.html'>About</a>
+			</div>
+			<div class='col-md-2'>
+			<a href='products.html'>Products</a>
+			</div>
+			<div class='col-md-2'>
+			<a href='contact.html'>Contact</a>
+			</div>
+			</div>
+			<div>
+			<form method="post" action='/respuesta'>
+
+				<p>Nombre: </p><input type="text" name="nombre" size="25" maxlength="50"><br><br>
+
+				<p>Apellidos: </p><input type="text" name="apellidos" size="35" maxlength="100">
+				<p>Edad: </p><input class='cantidad' type='number' min='0' max='150' value='0'></input><br><br>
+				Sexo <br/>
+				<input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+				<input type="radio" name="sexo" value="mujer" /> Mujer<br><br>
+				<p>Acepta las condiciones</p><input name="condiciones" type="checkbox" value="check"/> <br><br>
+				<input type="submit" value="Enviar" />
+			</form>
+
+			</div>
+		
+		</div>
+	
+	</body>
+
+
+</html>
